@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindromes</title>
-       <link rel="stylesheet" href="Main.css">
+    <title>U.S Marine Corps Ranking</title>
+      <link rel="stylesheet" href="Main.css">
 </head>
 <body>
-    <header>
-        <h1>Palindrome Tester</h1>
-        <!--Updated navigation-->
-               <nav>
+    <!--Up to date navigation-->
+        <nav>
             <a href="Index.html">Index</a>
             <br>
             <a href="Boards.html">Boards</a>
@@ -26,22 +24,20 @@
             <br>
             <a href="Array.html"></a>
         </nav>
-    </header>
-    <main>
-        <!--Creates labeled box, button, and submission place for text-->
-        <form onsubmit="return false;">
-            <label for="txtInput">Testing word: </label>
-            <input type="text" id="txtInput" required>
+    <!--Title-->
+    <h2>List of Marine Corps Ranks</h2>
+    <div>
+        <!--An Unordered List-->
+        <ul id="ulRanks"></ul>
 
-            <button onclick="testPalin();">Test Word?</button>
-        </form>
+        <h4>Click on rank to delete it</h4>
+    <!--Adds another bullet to the list-->
+        <h3>Add Rank</h3>
+        <input type="text" id ="txtNewRank">
+        <button onclick="addRank();">Add Rank</button>
 
-        <div id="divResult"></div>
-
-    </main>
-<!--Links the Javascript file-->
-    <script src= "Palindromes.js"></script>
-
-
+    </div>
+<!--Links Javascript code-->
+    <script src="Array.js"></script>
 </body>
 </html>
