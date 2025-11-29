@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--Preston Snell-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromes</title>
+       <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <header>
+        <h1>Palindrome Tester</h1>
+        <!--Updated navigation-->
+        <nav>
+            <a href="Index.html">Index</a>
+            <br>
+            <a href="Boards.html">Boards</a>
+            <br>
+            <a href="Craps.html">Craps</a>
+            <br>
+            <a href="Input Validation.html">User Input Validation</a>
+            <br>
+            <a href="Palindromes.html"></a>
+        </nav>
+    </header>
+    <main>
+        <!--Creates labeled box, button, and submission place for text-->
+        <form onsubmit="return false;">
+            <label for="txtInput">Testing word: </label>
+            <input type="text" id="txtInput" required>
+
+            <button onclick="testPalin();">Test Word?</button>
+        </form>
+
+        <div id="divResult"></div>
+
+    </main>
+<!--Links the Javascript file-->
+    <script src= "Palindromes.js"></script>
+
+
+</body>
+</html>
