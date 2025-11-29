@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palindromes</title>
+    <title>Play Noise</title>
        <link rel="stylesheet" href="Main.css">
 </head>
 <body>
     <header>
-        <h1>Palindrome Tester</h1>
-        <!--Updated navigation-->
-           <nav>
+        <h1>Play Noise</h1>
+         <nav>
             <a href="Index.html">Index</a>
             <br>
             <a href="Boards.html">Boards</a>
@@ -24,22 +23,18 @@
             <br>
             <a href="White Noise.html"></a>
         </nav>
-    </header>
+        </header>
+
     <main>
-        <!--Creates labeled box, button, and submission place for text-->
-        <form onsubmit="return false;">
-            <label for="txtInput">Testing word: </label>
-            <input type="text" id="txtInput" required>
+        <!--Creates audio element-->
+        <div id="divAudio"></div>
 
-            <button onclick="testPalin();">Test Word?</button>
-        </form>
-
-        <div id="divResult"></div>
-
+        <button id="btnAddAudio" onclick="addAudio();">Add Audio</button>
+        <!--Buttons play and pause audio-->
+        <button id="btnPlayAudio" onclick="playAudio();" hidden="true">Play</button>
+        <button id="btnPauseAudio" onclick="pauseAudio();" hidden="true">Pause</button>
     </main>
-<!--Links the Javascript file-->
-    <script src= "Palindromes.js"></script>
-
+    <script src="White Noise.js"></script> </script>
 
 </body>
 </html>
