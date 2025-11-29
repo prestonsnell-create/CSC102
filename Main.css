@@ -17,8 +17,11 @@ footer{
 }
 
 img{
-    margin-right:200px;
-
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 25%;
+    top:25%;
 }
 
 header{

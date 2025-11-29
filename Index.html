@@ -11,6 +11,7 @@
     <header>
 
         <h1>Welcome to CSC102</h1>
+        
 <!--Navigation links for website-->
           <nav>
             <a href="Index.html">Index</a>
@@ -25,9 +26,15 @@
     </header>
     <!--Inserting an Image-->
     <p>
+        <!--Start the image movement and stop the image movement-->
+        <button id="btnStart" onclick="startMove();">Start Move</button>
+        <button id="btnStop" onclick="stopMove();">Stop Move</button>
+
         <img src="Coding Meme.png" width="250" id="memeimage">
         
     </p>
+    <!--links the Javascript code-->
+    <script src="ImageMove.js"></script>
     <!--Footer with Information-->
     <footer>
         Preston Snell
